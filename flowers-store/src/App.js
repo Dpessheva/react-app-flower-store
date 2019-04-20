@@ -39,7 +39,7 @@ class App extends Component {
       this.setState({ loggedIn: true })
     }
     this.props.fetchStats()
-   // this.props.fetchProducts()
+   
   }
 
   componentWillReceiveProps (nextProps) {
@@ -62,8 +62,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Navbar
-          // products = {productsCount}
-          // users = {usersCount}
+
           loggedIn={this.state.loggedIn}
           isAdmin={isAdmin}
           logout={this.logout} />
