@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import OrderDetailsRow from './OrderDetailsRow'
 import Auth from '../../utils/auth'
-import NotFoundPage from '../common/NotFound/NotFoundPage'
+import NotFoundPage from '../common/NotFoundPage/NotFoundPage'
 import {fetchUserOrdersAction, fetchPendingOrdersAction} from '../../actions/ordersActions'
 import { connect } from 'react-redux'
 

@@ -6,7 +6,6 @@ const errorHandler = (json) => {
     }
   
     return message
-  }
+}
   
-  
-export default errorHandler
+  export default errorHandler;
