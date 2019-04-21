@@ -12,7 +12,7 @@ import CartPage from './components/cart/CartPage'
 import storePage from './components/store/storePage';
 import OrdersPage from './components/orders/OrdersPage'
 import OrderDetailsPage from './components/orders/OrderDetailsPage'
-import NotFoundPage from './components/common/NotFound/NotFoundPage'
+import NotFoundPage from './components/common/NotFoundPage/NotFoundPage'
 import Auth from './utils/auth'
 import PrivateRoute from './components/common/Routes/PrivateRoute'
 import AdminRoute from './components/common/Routes/AdminRoute'

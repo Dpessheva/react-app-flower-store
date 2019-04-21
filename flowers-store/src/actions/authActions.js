@@ -9,7 +9,7 @@ import {
 
 import { beginAjax, endAjax} from './ajaxStatusActions';
 import { login, register } from '../api/remote';
-import { errorHandler } from '../utils/errorHandler';
+import errorHandler from '../utils/errorHandler';
 
 function registerSuccess(){
     return{

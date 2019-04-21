@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import CandyCardList from '../common/Candy/CandyCardList'
+import FlowerCardList from '../common/Flowers/FlowerCardList'
 import Paginator from '../common/Paginator'
 import { connect } from 'react-redux'
 import { fetchProductsAction } from '../../actions/productsActions';
@@ -54,7 +54,7 @@ class StorePage extends Component {
             </form>
           </div>
         </div>
-        <CandyCardList products={products} />
+        <FlowerCardList products={products} />
         <Paginator
           productsCount={productsCount}
           pageSize={pageSize}
