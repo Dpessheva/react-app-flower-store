@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*{
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.5 'Montserrat', sans-serif;    
+}
+
+a {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav.navbar-menu {    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: purple;
+}
+
+nav.navbar-menu a {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: white;    
+    width: 15%;
+    align-items: center;
+    padding: 20px 10px;
+
+}
+
+nav.navbar-menu a:hover {
+    color: purple;
+    background-color: white;
+}
+
+div.welcome-wrapper {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: center;
+   
+
+}
+
+div.welcome-wrapper p{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+div.welcome {
+    padding: 10px;
+    box-shadow: 0px 5px 10px 5px #cecece;
+}
+
+div.welcome a {
+    padding: 10px;
+    background-color: purple;
+    border-radius: 0.5em;
+    outline: none;
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    border: 2px solid white;
+    
+}
+
+div.welcome a:hover {
+    background-color: white;
+    color: purple;
+    border: 2px solid black;
+}
+
+div.welcome p {
+    font-size: 18px;
+    margin: 25px
+}
+
+.form-wrapper {
+    padding: 1em 0 3em 0;
+    width: 60%;
+    margin: 0 auto;       
+    text-align: center;
+}
+
+.form-wrapper form{
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.form-group label{    
+    padding-right: 1em;
+    text-align: left;
+}
+
+.form-wrapper input{
+   padding: 10px 5px;
+   outline: none;
+   border-radius: 0.5em;
+   border: 1px solid rgb(88, 182, 92);   
+   
+}
+
+
+.form-wrapper input[type="submit"] {
+    padding: 10px 20px;
+    margin: 20px;   
+    background-color: purple;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.form-wrapper input[type="submit"]:hover {
+    background-color: white;
+    color: purple;
+    border: 2px solid black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    background-color: purple;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+th {
+    width: 100% !important;
+}
+
+
+@media screen and (max-width: 800px){
+    nav.navbar-menu a {
+        width: 100%;       
+        padding: 10px 5px;
+    }
+
+    div.welcome-wrapper > p a{
+        width: 100%;
+    }
+}
