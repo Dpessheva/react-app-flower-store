@@ -178,6 +178,8 @@ function likeProductSuccess (data) {
           if (json.success) {
             dispatch(unlikeProductSuccess(json.data))
           }
+        }).catch((e)=>{
+          console.log(e);
         })
     }
   }
