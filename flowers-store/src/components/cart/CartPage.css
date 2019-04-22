@@ -37,3 +37,15 @@
     width: 85px;
     height: 85px;
   }
+
+  .card-body{
+    padding: 0.5em;
+    flex-wrap: wrap;
+  }
+  #root > div > main > div > div:nth-child(2) > div{
+
+  }
+
+  .card-desk{
+    width: 100% !important
+  }

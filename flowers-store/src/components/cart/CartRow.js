@@ -22,19 +22,19 @@ class CartRow extends Component {
   }
 
   render () {
-    const {imageUrls, name,price} = this.props.product
+    const {imageUrl, name,price} = this.props.product
     const subtotal = this.props.product.quantity * price
     return (
       <tr>
         <td data-th='Product'>
           <div className='row'>
-            <div className='col-sm-4 hidden-xs'><img src={imageUrls} alt='...' className='cart-image' /></div>
+            <div className='col-sm-4 hidden-xs'><img src={imageUrl} alt='...' className='cart-image' /></div>
             <div className='col-sm-8'>
               <h4 className='nomargin'>{name}</h4>
             </div>
           </div>
         </td>
-        <td data-th='Price'>${price.toFixed(2)}</td>
+        <td data-th='Price'>euro {price.toFixed(2)}</td>
         <td data-th='Quantity'>
           <input
             type='number'
@@ -43,7 +43,7 @@ class CartRow extends Component {
             value={this.props.product.quantity}
             onChange={this.onChange} />
         </td>
-        <td data-th='Subtotal' className='text-center'>${subtotal.toFixed(2)}</td>
+        <td data-th='Subtotal' className='text-center'>euro {subtotal.toFixed(2)}</td>
         <td className='actions' data-th=''>
           <button className='btn btn-info btn-sm' onClick={this.onRefreshButtonClick}><i className='fa fa-refresh' /></button>
           <button className='btn btn-danger btn-sm' onClick={this.onDeleteButtonClick}><i className='fa fa-trash-o' /></button>

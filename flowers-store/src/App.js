@@ -38,7 +38,7 @@ class App extends Component {
     if (Auth.isUserAuthenticated()) {
       this.setState({ loggedIn: true })
     }
-    this.props.fetchStats()
+    this.props.fetchProducts()
    
   }
 

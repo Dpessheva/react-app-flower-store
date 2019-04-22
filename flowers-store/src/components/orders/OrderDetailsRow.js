@@ -7,9 +7,9 @@ const OrderDetailsRow = (props) => {
     <tr>
       <th>#{props.index + 1}</th>
       <td>{name}</td>
-      <td>$ {price.toFixed(2)}</td>
+      <td>euro {price.toFixed(2)}</td>
       <td>{quantity}</td>
-      <td>$ {total.toFixed(2)}</td>
+      <td>euro {total.toFixed(2)}</td>
     </tr>
   )
 }

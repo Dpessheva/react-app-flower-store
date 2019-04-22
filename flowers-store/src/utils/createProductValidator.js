@@ -1,6 +1,6 @@
 import toastr from 'toastr'
 
-function createProductValidator (name, description, imageUrls, price) {
+function createProductValidator (name, description, imageUrl, price) {
   if (name.length < 3 || name === '') {
     toastr.error('Name must be at least 3 characters long')
     return false
@@ -9,7 +9,7 @@ function createProductValidator (name, description, imageUrls, price) {
     toastr.error('Description must be between 10 and 200 characters long')
     return false
   }
-  if (imageUrls.length < 14 || !(imageUrls.startsWith('https://') || imageUrls.startsWith('http://'))) {
+  if (imageUrl.length < 14 || !(imageUrl.startsWith('https://') || imageUrl.startsWith('http://'))) {
     toastr.error('Image URL must be at least 14 characters long and must be valid URL')
     return false
   }

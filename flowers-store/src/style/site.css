@@ -147,6 +147,33 @@ div.welcome p {
     border: 2px solid black;
     font-size: 18px;
     font-weight: bold;
+    
+}
+#root > div > main > div > div.row.space-top > div{
+    color: black !important
+}
+#root > div > main > div > div.row.space-top > div > p:nth-child(1) > span.font-weight-bold.lead.text-warning{
+    color: black !important;
+}
+#root > div > main > div > div.row.space-top > div > p:nth-child(2) > span.font-weight-bold.lead.text-warning{
+    color: black !important;
+}
+#root > div > main > div > div.row.space-top > div > p:nth-child(3) > span.font-weight-bold.lead.text-warning{
+    color: black !important;
+}
+#root > div > main > div > div:nth-child(2) > div:nth-child(2) > p:nth-child(1) > span{
+    color: black !important
+}
+
+#root > div > main > div > div:nth-child(2) > div:nth-child(2) > p:nth-child(2) > span{
+    color: black !important;
+}
+#root > div > main > div > div:nth-child(2) > div:nth-child(2) > p:nth-child(3) > span{
+    color: black !important;
+}
+
+.btn-secondary{
+color: green !important
 }
 
 footer {

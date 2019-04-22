@@ -32,7 +32,7 @@ class CreatePage extends Component {
     e.preventDefault()
     this.setState({submitting: true});
     if (!createProductValidator(this.state.name, 
-      this.state.description, this.state.imageUrls, this.state.price)) {
+      this.state.description, this.state.imageUrl, this.state.price)) {
         toastr.error(this.props.createProductError.message)
       return
     }

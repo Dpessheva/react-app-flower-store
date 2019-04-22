@@ -50,7 +50,7 @@ class OrderDetailsPage extends Component {
           <div className='col-md-12 mt-3'>
             <p><span className='font-weight-bold lead text-warning'>Products In Order:</span> <span className='ml-2 lead'>{order.products.length}</span></p>
             <p><span className='font-weight-bold lead text-warning'>Date:</span> <span className='ml-2 lead'>{new Date(order.date).toLocaleString()}</span></p>
-            <p><span className='font-weight-bold lead text-warning'>Total Price:</span> <span className='ml-2 lead'>${totalPrice.toFixed(2)}</span></p>
+            <p><span className='font-weight-bold lead text-warning'>Total Price:</span> <span className='ml-2 lead'>euro {totalPrice.toFixed(2)}</span></p>
           </div>
         </div>
         <div className='row mt-5'>
