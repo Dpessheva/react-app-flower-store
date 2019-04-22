@@ -25,7 +25,7 @@ function validateProductCreateForm (payload) {
     errors.price = 'Price must be a positive number.'
   }
 
-  if (!payload || typeof payload.imageUrls !== 'string' || !(payload.imageUrls.startsWith('https://') || payload.imageUrls.startsWith('http://')) || payload.imageUrls.length < 14) {
+  if (!payload || typeof payload.imageUrl !== 'string' || !(payload.imageUrl.startsWith('https://') || payload.imageUrl.startsWith('http://')) || payload.imageUrl.length < 14) {
     isFormValid = false
     errors.image = 'Please enter valid Image URL. Image URL must be at least 14 symbols.'
   }
@@ -43,7 +43,6 @@ function validateProductCreateForm (payload) {
 
 router.post('/create', authCheck, (req, res) => {
   const productObj = req.body;
-  console.log(req.body);
   if (req.user.roles.indexOf('Admin') > -1) {
     const validationResult = validateProductCreateForm(productObj);
     if (!validationResult.success) {
