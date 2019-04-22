@@ -60,7 +60,7 @@ function registerAction(username, email, password ){
                 const error = errorHandler(json)
                 dispatch(registerError(error))
             }
-            dispatch(endAjax);
+            dispatch(endAjax());
         })
     }
 }
