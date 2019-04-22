@@ -160,6 +160,16 @@ footer {
     font-weight: bold;
 }
 
+
+#customer-orders > div > div > h3{
+    color: black !important;
+}
+
+#root > div > main > div > div:nth-child(1) > div > form > input{
+    color: black !important;
+    font-size: 20px;
+    font-weight: bold !important;
+}
 th {
     width: 100% !important;
 }
