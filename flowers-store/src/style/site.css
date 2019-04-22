@@ -9,7 +9,11 @@
 body {
     margin: 0;
     padding: 0;
-    font: 16px/1.5 'Montserrat', sans-serif;    
+    font: 16px/1.5 'Montserrat', sans-serif; 
+    background-image: url('https://images.unsplash.com/photo-1487537177666-94b1f521631a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 a {
@@ -28,7 +32,7 @@ nav.navbar-menu {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: purple;
+    background-color: green;
 }
 
 nav.navbar-menu a {
@@ -43,7 +47,7 @@ nav.navbar-menu a {
 }
 
 nav.navbar-menu a:hover {
-    color: purple;
+    color: black;
     background-color: white;
 }
 
@@ -52,6 +56,7 @@ div.welcome-wrapper {
     margin: 0 auto;
     padding: 3em 0;
     text-align: center;
+    color: black
    
 
 }
@@ -67,11 +72,12 @@ div.welcome-wrapper p{
 div.welcome {
     padding: 10px;
     box-shadow: 0px 5px 10px 5px #cecece;
+    
 }
 
 div.welcome a {
     padding: 10px;
-    background-color: purple;
+    background-color: green;
     border-radius: 0.5em;
     outline: none;
     text-decoration: none;
@@ -83,7 +89,7 @@ div.welcome a {
 
 div.welcome a:hover {
     background-color: white;
-    color: purple;
+    color: black;
     border: 2px solid black;
 }
 
@@ -127,7 +133,7 @@ div.welcome p {
 .form-wrapper input[type="submit"] {
     padding: 10px 20px;
     margin: 20px;   
-    background-color: purple;
+    background-color: green;
     color: white;
     border: none;
     font-size: 18px;
@@ -137,7 +143,7 @@ div.welcome p {
 
 .form-wrapper input[type="submit"]:hover {
     background-color: white;
-    color: purple;
+    color: black;
     border: 2px solid black;
     font-size: 18px;
     font-weight: bold;
@@ -148,7 +154,7 @@ footer {
     width: 100%;
     bottom: 0;
     text-align: center;
-    background-color: purple;
+    background-color: green;
     padding: 10px 0;
     font-size: 18px;
     font-weight: bold;
