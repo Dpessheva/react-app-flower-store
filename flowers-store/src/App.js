@@ -57,7 +57,7 @@ class App extends Component {
 
   render () {
     const isAdmin = Auth.isUserAdmin()
-    //const {productsCount, usersCount} = this.props.stats
+  
 
     return (
       <div className='App'>
