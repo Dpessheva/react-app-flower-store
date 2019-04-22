@@ -6,7 +6,7 @@ import HomePage from './components/home/homePage'
 import RegisterPage from './components/auth/RegisterPage'
 import LoginPage from './components/auth/LoginPage'
 import CreatePage from './components/create/createPage'
- import EditPage from './components/edit/editPage'
+import EditPage from './components/edit/editPage'
 import DetailsPage from './components/details/DetailsPage'
 import CartPage from './components/cart/CartPage'
 import storePage from './components/store/storePage';
@@ -92,7 +92,7 @@ class App extends Component {
 function mapStateToProps (state) {
   return {
     loginSuccess: state.login.success,
-    //stats: state.stats
+    
   }
 }
 
