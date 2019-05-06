@@ -2,8 +2,10 @@
   "name": "flowers-store",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Dpessheva/react-app-flower-store",
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "gh-pages": "^2.0.1",
     "mdbreact": "4.5.1",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
@@ -17,6 +19,8 @@
     "toastr": "2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
